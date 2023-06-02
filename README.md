@@ -10,17 +10,17 @@ This is the backend assignment for the 2023 TikTok Tech Immersion Program.
 
    > `git clone https://github.com/melvincwng/tiktok_assignment_demo_2023.git --config core.autocrlf=false`.
 
-2. The flag --config core.autocrlf=false is to ensure that the line endings are in Unix format (LF) and not Windows format (CRLF). This is to ensure that the bash scripts can be executed properly. If this is not done, you may encounter issues regarding `/usr/bin/env: ‘bash\r’: No such file or directory` when running `docker-compose up` later on.
+2. The flag `--config core.autocrlf=false` is to ensure that the line endings are in **Unix format (LF)** and **not Windows format (CRLF)**. This is to ensure that the bash scripts can be executed properly. If this is not done, you will encounter issues regarding `/usr/bin/env: ‘bash\r’: No such file or directory` when running `docker-compose up` later on.
 
-3. Download [Go](https://go.dev/doc/install).
+3. Next, download [Go](https://go.dev/doc/install).
 
-4. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+4. Next, download [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 5. Run the command `docker-compose up` in the root directory of the project.
 
 6. For Windows Users:
 
-   - After executing `docker-compose up`, you may encounter issues regarding `build.sh not found` despite the file being present in the directory.
+   - After executing `docker-compose up`, you may still encounter issues regarding `build.sh not found` despite the file being present in the directory.
    - This is because the line endings **are not** in Unix format (LF).
    - Bash scripts are **sensitive** to line endings formatting (can read up on LF vs CRLF).
    - To fix this, on your code editor e.g. VSCode, `click on the CRLF button at the bottom right corner and change it to LF`.
@@ -28,7 +28,18 @@ This is the backend assignment for the 2023 TikTok Tech Immersion Program.
    - You can change your settings back to CRLF after you are done.
    - See **References 1 and 2 below** for more information.
 
-7. Go to Docker Desktop and you should now see your containers running over there.
+7. Go to Docker Desktop and you should now see your containers running over there. There should be 3 containers running - http-server, rpc-server, etcd-container.
+
+8. To test whether the APIs are working, we will be using Postman:
+   - POST request
+   - URL: localhost:8080/api/send
+   - Body: raw JSON
+   - JSON: `{
+         "chat": "person1:person2",
+         "text": "hello world",
+         "sender": "person1"
+      }`
+   - If successful, you will see `200 OK` else you would see `500 Internal Server Error`.
 
 ## References
 
