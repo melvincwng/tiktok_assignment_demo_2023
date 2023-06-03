@@ -53,7 +53,7 @@ After analyzing the assignment's requirements, it seems like majority of the ser
 - [x] Setup Database and establish connection with the RPC Server. Once this is setup, we will have 4 containers running - http-server, rpc-server, etcd-container, db-container.
 - [x] Update the business logic in handler.go - instead of using the placeholder areYouLucky(), we will be implementing our own logic here to a) send message and b) pull messages to/from the database.
 - [x] Manual Testing via Postman/Unit Testing/Tidy up README.md
-- [x] Everytime changes are made to the code, we will need to rebuild the docker image via `docker compose build` and then re-run the containers via `docker-compose up`. Or else, the changes will not be reflected.
+- [x] Everytime changes are made to the code, we will need to rebuild the docker image via `docker-compose build` and then re-run the containers via `docker-compose up`. Or else, the changes will not be reflected.
 
 ## Tech Stack Used
 
