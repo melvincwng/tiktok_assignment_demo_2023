@@ -48,7 +48,7 @@ func (c *RedisClient) SaveMessage(ctx context.Context, roomID string, message *M
 		Score:  float64(message.Timestamp),
 		Member: text,
 	}
-	log.Println("What is the member? ", member)
+	log.Println("What is the member? ", *member)
 
 	/* 
 		To summarize:
