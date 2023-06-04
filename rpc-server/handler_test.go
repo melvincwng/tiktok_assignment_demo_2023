@@ -1,4 +1,5 @@
 // go test handler_test.go -v (need -v flag to log more details about the tests e.g. your logs, output etc)
+// KIV: Somehow, unit tests are passing locally but failing on GitHub Actions...
 
 package main
 
