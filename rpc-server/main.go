@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	rdb = &RedisClient{}
+	rdb = &RedisClient{} // Makes rdb a global variable in the 'main' scope
 )
 
 func main() {

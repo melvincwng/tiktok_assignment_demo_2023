@@ -1180,6 +1180,7 @@ func (p *PullResponse) GetMessages() (v []*Message) {
 	return p.Messages
 }
 
+// Booleans are by default false in Go
 var PullResponse_HasMore_DEFAULT bool
 
 func (p *PullResponse) GetHasMore() (v bool) {

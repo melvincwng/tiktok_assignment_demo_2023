@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// Matches payload for the Send method.
 type Message struct {
 	Chat     string `thrift:"Chat,1" frugal:"1,default,string" json:"Chat"`
 	Text     string `thrift:"Text,2" frugal:"2,default,string" json:"Text"`
@@ -768,6 +769,7 @@ func (p *SendResponse) Field2DeepEqual(src string) bool {
 	return true
 }
 
+// Matches payload for the Pull method.
 type PullRequest struct {
 	Chat    string `thrift:"Chat,1,required" frugal:"1,required,string" json:"Chat"`
 	Cursor  int64  `thrift:"Cursor,2,required" frugal:"2,required,i64" json:"Cursor"`
@@ -795,6 +797,8 @@ func (p *PullRequest) GetLimit() (v int32) {
 	return p.Limit
 }
 
+// Default bool value in Go is false
+// Reference: https://www.w3schools.com/go/go_boolean_data_type.php
 var PullRequest_Reverse_DEFAULT bool
 
 func (p *PullRequest) GetReverse() (v bool) {
