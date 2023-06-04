@@ -1,8 +1,8 @@
 # TikTok Tech Immersion Program Assignment 2023
 
-![Tests](https://github.com/melvincwng/tiktok_assignment_demo_2023/actions/workflows/test.yml/badge.svg)
+![Tests](https://github.com/TikTokTechImmersion/assignment_demo_2023/actions/workflows/test.yml/badge.svg)
 
-This is the backend assignment for the 2023 TikTok Tech Immersion Program.
+This is the backend assignment for the 2023 TikTok Tech Immersion Program. It is about creating an Instant Messaging System using Golang, Protobuf, Kitex, Redis and Docker. Only the backend is required for this assignment, frontend is not required.
 
 ## Setup Instructions
 
@@ -65,11 +65,10 @@ After analyzing the assignment's requirements, it seems like majority of the ser
 - Go for backend code logic
 
 ## Screenshots
+
 ![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/61f54f03-3b31-4788-ba9a-40ef5d810bc3)
 ![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/2877c241-22b7-4e07-9273-956a25cde093)
 ![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/87abfd92-7e8a-48ec-b521-2ba2e73a0f75)
-
-
 
 ## References
 
