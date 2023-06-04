@@ -40,8 +40,7 @@ func (c *RedisClient) SaveMessage(ctx context.Context, roomID string, message *M
 	if err != nil {
 		return err
 	}
-
-	// Using anonymous struct to store the message in the sorted set
+	
 	// Read up more on sorted sets here: https://www.youtube.com/watch?v=MUKlxdBQZ7g 
 	// Sorted sets are sets that contain objects that are sorted by a key/score (in this case, the timestamp)
 	// RoomID is used to identify which conversation the message belongs to (which room that the convo is in)
