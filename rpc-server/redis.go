@@ -55,13 +55,17 @@ func (c *RedisClient) SaveMessage(ctx context.Context, roomID string, message *M
 			roomID is the key or identifier for the Redis sorted set (identifies which conversation the message belongs to)
 			The Score field in *redis.Z represents the score, which is the timestamp of the message. (The sorting key)
 			The Member field in *redis.Z represents the message text or the member field in Redis. (The value)
-			Once the member is constructed, it can be added to the sorted set in Redis using the ZAdd method.
+			Once the member is constructed, it can be added to the sorted set in Redis using the ZAdd method
 			roomID is the key, *member will give us Score (which is the score) & Member (which is the message text/member field)
+			From Reference 4 below (line 348): ZAdd(ctx context.Context, key string, members ...Z) *IntCmd
+			Notice that the members parameter is of type Z (i.e members ...Z)
+			The Z type in this context refers to the redis.Z struct type, which represents a member of a sorted set in Redis
 			Reference: 
 				https://redis.io/commands/zadd/ (key, score, member)
 				https://redis.io/commands/zadd/
 				https://github.com/redis/go-redis/blob/master/commands_test.go (cltrl F 'redis.Z')
-	*/
+				https://github.com/redis/go-redis/blob/master/commands.go#LL348C2-L348C61 (line 348)
+	*/	
 	_, err = c.client.ZAdd(ctx, roomID, *member).Result()
 	if err != nil {
 		return err
