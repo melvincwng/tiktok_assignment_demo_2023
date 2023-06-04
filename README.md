@@ -64,6 +64,13 @@ After analyzing the assignment's requirements, it seems like majority of the ser
 - Docker for containerization
 - Go for backend code logic
 
+## Screenshots
+![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/61f54f03-3b31-4788-ba9a-40ef5d810bc3)
+![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/2877c241-22b7-4e07-9273-956a25cde093)
+![image](https://github.com/melvincwng/tiktok_assignment_demo_2023/assets/77479885/87abfd92-7e8a-48ec-b521-2ba2e73a0f75)
+
+
+
 ## References
 
 How to resolve CRLF/LF line endings related issues for Windows users:
