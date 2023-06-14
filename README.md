@@ -72,11 +72,12 @@ After analyzing the assignment's requirements, it seems like majority of the ser
 
 ## References
 
-How to resolve CRLF/LF line endings related issues for Windows users:
+1. [Resolving CRLF/LF line endings issues for Windows users 1](https://willi.am/blog/2016/08/11/docker-for-windows-dealing-with-windows-line-endings/)
 
-1. https://willi.am/blog/2016/08/11/docker-for-windows-dealing-with-windows-line-endings/
-2. https://stackoverflow.com/questions/39527571/are-shell-scripts-sensitive-to-encoding-and-line-endings
+2. [Resolving CRLF/LF line endings issues for Windows users 2](https://stackoverflow.com/questions/39527571/are-shell-scripts-sensitive-to-encoding-and-line-endings)
 
-Docker commands:
+3. [Docker Commands](https://docs.docker.com/engine/reference/commandline/compose_build/)
 
-3. https://docs.docker.com/engine/reference/commandline/compose_build/
+4. [Redis Documentation](https://redis.io/commands/zadd/)
+
+4. [Lark Documentation by Weixing](https://o386706e92.larksuite.com/docx/QE9qdhCmsoiieAx6gWEuRxvWsRc)
